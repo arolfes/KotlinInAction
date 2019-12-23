@@ -8,7 +8,7 @@ object ExpObject {
         }
         if (e is Sum) {
             val n = e as Sum
-            return eval(e.right) + eval(e.left)
+            return eval(n.right) + eval(n.left)
         }
         throw IllegalArgumentException("Unknown expression")
     }
